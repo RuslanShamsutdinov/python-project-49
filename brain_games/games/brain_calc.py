@@ -2,9 +2,10 @@
 import random
 import prompt
 from brain_games.scripts.brain_games import main
+from brain_games.validation import valid
 
 
-def calculator_test():
+def calculator_test(): # poetry run brain-calc
     name = main()
     count = 0
     operations = ["+", "-"]
@@ -16,26 +17,14 @@ def calculator_test():
         print(f'Question: {random_number1} {random_operation} {random_number2}')
         if random_operation == '+':
             correct_answer = random_number1 + random_number2
-            answer = prompt.string('Your answer: ')
-            if correct_answer == int(answer):
-                print("Correct!")
-                count += 1
-            else:
-                print(f"'{answer}' is wrong answer ;(."
-                      f"Correct answer was '{correct_answer}'.")
-                count = 0
-        if random_operation == '-':
+        else:
             correct_answer = random_number1 - random_number2
-            answer = prompt.string('Your answer: ')
-            if correct_answer == int(answer):
-                print("Correct!")
-                count += 1
-            else:
-                print(f"'{answer}' is wrong answer ;(."
-                      f"Correct answer was '{correct_answer}'.")
-                count = 0
-        if count == 3:
-            print(f"Congratulations, {name}")
+        answer = int(prompt.string('Your answer: '))
+        if valid(answer, correct_answer):
+            count += 1
+        else:
+            count = 0
+    print(f"Congratulations, {name}")
 
 
 if __name__ == '__main__':

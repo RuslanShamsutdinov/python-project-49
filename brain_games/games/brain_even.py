@@ -3,12 +3,12 @@
 import random
 import prompt
 from brain_games.scripts.brain_games import main
+from brain_games.validation import valid
 
 
-def parity_check():
+def parity_check(): # poetry run brain-even
     name = main()
     count = 0
-    random_number = random.randint(1, 100)
     print("""Answer "yes" if the number is even, otherwise answer "no".""")
     while count < 3:
         random_number = random.randint(1, 100)
@@ -18,16 +18,13 @@ def parity_check():
         else:
             correct_answer = 'no'
         answer = prompt.string('Your answer: ')
-        if answer == correct_answer:
-            print("Correct!")
+        if valid(answer, correct_answer):
             count += 1
         else:
             count = 0
-            print(f"'{answer}' is wrong answer ;(. "
-                  f"Correct answer was '{correct_answer}'.")
-    if count == 3:
-        print(f'Congratulations, {name}!')
+    print(f'Congratulations, {name}!')
 
 
 if __name__ == '__main__':
     main()
+
