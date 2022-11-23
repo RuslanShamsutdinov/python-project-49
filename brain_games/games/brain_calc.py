@@ -20,7 +20,7 @@ def calculator_test(): # poetry run brain-calc
         else:
             correct_answer = random_number1 - random_number2
         answer = int(prompt.string('Your answer: '))
-        if valid(answer, correct_answer):
+        if valid(answer, correct_answer, name):
             count += 1
         else:
             count = 0

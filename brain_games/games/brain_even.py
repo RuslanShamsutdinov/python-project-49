@@ -18,7 +18,7 @@ def parity_check(): # poetry run brain-even
         else:
             correct_answer = 'no'
         answer = prompt.string('Your answer: ')
-        if valid(answer, correct_answer):
+        if valid(answer, correct_answer, name):
             count += 1
         else:
             count = 0

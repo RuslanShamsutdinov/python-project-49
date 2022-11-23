@@ -20,9 +20,8 @@ def gcd_test():  # poetry run brain-gcd
                 random_number2 = random_number2 % random_number1
         correct_answer = random_number1 + random_number2
         answer = int(prompt.string('Your answer: '))
-        if valid(answer, correct_answer):
+        if valid(answer, correct_answer, name):
             count += 1
         else:
             count = 0
-            print(f'Lets try again, {name}!')
     print(f"Congratulations, {name}")
