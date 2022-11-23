@@ -21,7 +21,8 @@ def calculator_test():
                 print("Correct!")
                 count += 1
             else:
-                print(f"""'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.""")
+                print(f"'{answer}' is wrong answer ;(."
+                      f"Correct answer was '{correct_answer}'.")
                 count = 0
         if random_operation == '-':
             correct_answer = random_number1 - random_number2
@@ -30,7 +31,8 @@ def calculator_test():
                 print("Correct!")
                 count += 1
             else:
-                print(f"""'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.""")
+                print(f"'{answer}' is wrong answer ;(."
+                      f"Correct answer was '{correct_answer}'.")
                 count = 0
         if count == 3:
             print(f"Congratulations, {name}")
