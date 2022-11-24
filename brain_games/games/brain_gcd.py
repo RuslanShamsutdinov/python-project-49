@@ -25,3 +25,7 @@ def gcd_test():  # poetry run brain-gcd
         else:
             count = 0
     print(f"Congratulations, {name}")
+
+
+if __name__ == '__main__':
+    main()

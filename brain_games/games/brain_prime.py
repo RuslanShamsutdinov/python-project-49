@@ -10,10 +10,9 @@ def prime_test():  # poetry run brain-prime
     count = 0
     print('''Answer "yes" if given number is prime. Otherwise answer "no"''')
     while count < 3:
-        k = ''
         correct_answer = 'yes'
         random_number = random.randint(0, 50)
-        for i in range(2, random_number//2+1):
+        for i in range(2, random_number // 2 + 1):
             if random_number % i == 0:
                 correct_answer = 'no'
         print(f'Question: {random_number}')

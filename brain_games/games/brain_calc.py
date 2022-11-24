@@ -5,7 +5,7 @@ from brain_games.scripts.brain_games import main
 from brain_games.validation import valid
 
 
-def calculator_test(): # poetry run brain-calc
+def calculator_test():  # poetry run brain-calc
     name = main()
     count = 0
     operations = ["+", "-"]

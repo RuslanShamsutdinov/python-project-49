@@ -10,5 +10,3 @@ def valid(answer, correct_answer, name):
               f"Correct answer was '{correct_answer}'.")
         print(f'Lets try again, {name}!')
         return False
-
-
