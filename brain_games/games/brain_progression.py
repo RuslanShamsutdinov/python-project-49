@@ -18,12 +18,12 @@ def progression_test():  # poetry run brain-progr
         random_position = random.randint(4, random_len - 1)
         for i in range(random_len):
             L.append(random_start + random_progression * i)
-        correct_answer = L[random_position]
+        correct_answer = str(L[random_position])
         L[random_position] = '..'
         for i in L:
             k += str(i) + ' '
         print(f'Question: {k}')
-        answer = int(prompt.string('Your answer: '))
+        answer = prompt.string('Your answer: ')
         if valid(answer, correct_answer, name):
             count += 1
         else:
