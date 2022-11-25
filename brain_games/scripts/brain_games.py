@@ -4,10 +4,9 @@
 from brain_games.cli import welcome_user
 
 
-def main():
+def main():  # poetry run brain-games
     print('Welcome to the Brain Games!')
-    name = welcome_user()
-    return name
+    welcome_user()
 
 
 if __name__ == '__main__':

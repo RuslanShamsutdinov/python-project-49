@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
 import random
 import prompt
-from brain_games.scripts.brain_games import main
+from brain_games.welcome import main
 from brain_games.validation import valid
 
 
 def gcd_test():  # poetry run brain-gcd
     name = main()
-    count = 0
+    tries = 3
     print("Find the greatest common divisor of given numbers.")
-    while count < 3:
+    while tries > 0:
         random_number1 = random.randint(1, 10)
         random_number2 = random.randint(1, 10)
         print(f'Question: {random_number1} {random_number2}')
@@ -20,11 +20,7 @@ def gcd_test():  # poetry run brain-gcd
                 random_number2 = random_number2 % random_number1
         correct_answer = str(random_number1 + random_number2)
         answer = prompt.string('Your answer: ')
-        if valid(answer, correct_answer, name):
-            count += 1
-        else:
-            count = 0
-    print(f"Congratulations, {name}")
+        tries += valid(answer, correct_answer, name, tries)
 
 
 if __name__ == '__main__':
