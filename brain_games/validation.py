@@ -6,7 +6,7 @@ def valid(answer, correct_answer, name, tries):
         print("Correct!")
         return -1
     elif correct_answer == answer and tries == 1:
-        print(f"Congratulations, {name}")
+        print(f"Congratulations, {name}!")
         return -1
     else:
         print(f"'{answer}' is wrong answer ;(."
