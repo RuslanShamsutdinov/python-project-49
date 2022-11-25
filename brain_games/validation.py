@@ -11,5 +11,5 @@ def valid(answer, correct_answer, name, tries):
     else:
         print(f"'{answer}' is wrong answer ;(."
               f"Correct answer was '{correct_answer}'.")
-        print(f'Lets try again, {name}!')
+        print(f"Let's try again, {name}!")
         return -1 * tries
