@@ -10,8 +10,8 @@ def progression_test():  # poetry run brain-progr
     tries = 3
     print("What number is missing in the progression?")
     while tries > 0:
-        k = ''  # строка в вопросе
-        L = []  # список
+        k = ''
+        L = []
         random_start = random.randint(1, 20)
         random_progression = random.randint(1, 5)
         random_len = random.randint(5, 10)
@@ -19,7 +19,7 @@ def progression_test():  # poetry run brain-progr
         for i in range(random_len):
             L.append(random_start + random_progression * i)
         correct_answer = str(L[random_position])
-        L[random_position] = '..'  # заменяем рандомный элемент
+        L[random_position] = '..'
         for i in L:
             k += str(i) + ' '
         print(f'Question: {k}')
