@@ -5,7 +5,7 @@ from brain_games.welcome import main
 from brain_games.validation import valid
 
 
-def progression_test():  # poetry run brain-progr
+def progression_test():
     name = main()
     tries = 3
     print("What number is missing in the progression?")
