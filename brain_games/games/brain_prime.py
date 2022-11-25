@@ -8,7 +8,7 @@ from brain_games.validation import valid
 def prime_test():  # poetry run brain-prime
     name = main()
     tries = 3
-    print('''Answer "yes" if given number is prime. Otherwise answer "no"''')
+    print('''Answer "yes" if given number is prime. Otherwise answer "no".''')
     while tries > 0:
         correct_answer = 'yes'
         random_number = random.randint(0, 50)
