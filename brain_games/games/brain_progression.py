@@ -14,8 +14,8 @@ def progression_test():
         L = []
         random_start = random.randint(1, 20)
         random_progression = random.randint(1, 5)
-        random_len = random.randint(5, 10)
-        random_position = random.randint(4, random_len - 1)
+        random_len = random.randint(6, 11)
+        random_position = random.randint(0, random_len - 1)
         for i in range(random_len):
             L.append(random_start + random_progression * i)
         correct_answer = str(L[random_position])
