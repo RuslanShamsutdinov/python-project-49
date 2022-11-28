@@ -1,6 +1,3 @@
-#!/usr/bin/env python3
-
-
 def valid(answer, correct_answer, name, tries):
     if correct_answer == answer and tries > 1:
         print("Correct!")
