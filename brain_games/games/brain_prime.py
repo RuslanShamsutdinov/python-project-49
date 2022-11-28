@@ -1,7 +1,7 @@
 from random import randint
 import prompt
 
-ANNOTATIONS = """Answer "yes" if given number is prime. Otherwise answer "no"."""
+ANNOTATION = """Answer "yes" if given number is prime. Otherwise answer "no"."""
 
 
 def get_answers():  # poetry run brain-prime

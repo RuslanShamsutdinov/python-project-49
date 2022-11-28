@@ -1,7 +1,7 @@
 from random import randint
 import prompt
 
-ANNOTATIONS = """What number is missing in the progression?"""
+ANNOTATION = """What number is missing in the progression?"""
 
 
 def get_answers():  # poetry run brain-progression

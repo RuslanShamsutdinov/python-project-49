@@ -1,7 +1,7 @@
 from random import randint
 import prompt
 
-ANNOTATIONS = """Find the greatest common divisor of given numbers."""
+ANNOTATION = """Find the greatest common divisor of given numbers."""
 
 
 def get_answers():  # poetry run brain-gcd

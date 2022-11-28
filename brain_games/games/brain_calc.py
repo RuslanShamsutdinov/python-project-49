@@ -1,7 +1,7 @@
 from random import randint
 import prompt
 
-ANNOTATIONS = """What is the result of the expression?"""
+ANNOTATION = """What is the result of the expression?"""
 
 
 def get_answers():  # poetry run brain-calc

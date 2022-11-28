@@ -1,7 +1,7 @@
 from random import randint
 import prompt
 
-ANNOTATIONS = """Answer "yes" if the number is even, otherwise answer "no"."""
+ANNOTATION = """Answer "yes" if the number is even, otherwise answer "no"."""
 
 
 def get_answers():  # poetry run brain-even
