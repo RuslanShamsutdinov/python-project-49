@@ -1,15 +1,21 @@
 from random import randint
-import prompt
 
 ANNOTATION = """Answer "yes" if given number is prime. Otherwise answer "no"."""
 
 
-def get_answers():  # poetry run brain-prime
-    correct_answer = 'yes'
-    random_number = randint(2, 50)
+def is_prime(random_number):
     for i in range(2, random_number // 2 + 1):
         if random_number % i == 0:
-            correct_answer = 'no'
-    print(f'Question: {random_number}')
-    answer = prompt.string('Your answer: ')
-    return answer, correct_answer
+            return True
+
+
+def get_question_and_correct_answer():
+    correct_answer = 'yes'
+    Question = randint(2, 50)
+    if is_prime(Question):
+        correct_answer = 'no'
+    return correct_answer, Question
+
+
+if __name__ == '__main__':
+    is_prime()

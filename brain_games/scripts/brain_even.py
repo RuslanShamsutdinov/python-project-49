@@ -4,7 +4,7 @@ from brain_games.engine import game_engine
 from brain_games.games import brain_even
 
 
-def main():  # poetry run brain-even
+def main():
     return game_engine(brain_even)
 
 
