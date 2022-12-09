@@ -17,10 +17,10 @@ def is_prime(random_number):
     else:
         return True
 
+
 def get_question_and_correct_answer():
     correct_answer = 'no'
     question = randint(0, 20)
     if is_prime(question):
         correct_answer = 'yes'
     return correct_answer, question
-
